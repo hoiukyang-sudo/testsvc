@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우리학교 계정 검색 사이트</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>구글 계정 찾기</h1>
+        <p>학번과 이름을 입력하여 계정 정보를 확인하세요.</p>
+
+        <div class="search-box">
+            <input type="number" id="studentId" placeholder="학번 입력 (예: 10101)" required>
+            <input type="text" id="studentName" placeholder="이름 입력" required>
+            <button id="searchBtn">검색하기</button>
+        </div>
+
+        <div id="resultArea" class="hidden">
+            <hr>
+            <h3>검색 결과</h3>
+            <p><strong>아이디:</strong> <span id="displayId"></span></p>
+            <p><strong>비밀번호:</strong> <span id="displayPw"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

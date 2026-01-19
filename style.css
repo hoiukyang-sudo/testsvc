@@ -1,0 +1,74 @@
+/* 부드러운 폰트와 배경 설정 */
+body {
+    background-color: #fdf6e3; /* 연한 베이지색 배경 */
+    font-family: 'Pretendard', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 전체적인 박스 스타일 */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 25px; /* 아주 둥글게 */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05); /* 은은한 그림자 */
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    color: #ff9aa2; /* 귀여운 분홍색 */
+    margin-bottom: 20px;
+}
+
+/* 입력창 스타일 */
+input {
+    width: 80%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #ffccf9; /* 연한 보라색 테두리 */
+    border-radius: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #ff9aa2; /* 클릭 시 분홍색으로 변경 */
+}
+
+/* 버튼 스타일 */
+button {
+    background-color: #ffccf9;
+    color: #555;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+    background-color: #ff9aa2;
+    color: white;
+    transform: scale(1.05); /* 살짝 커지는 효과 */
+}
+
+/* 결과창 스타일 */
+#resultArea {
+    margin-top: 20px;
+    background-color: #f0f4ff;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px dashed #b2cefe;
+}
+
+/* 초기에는 안 보이게 설정 */
+.hidden {
+    display: none;
+}
